@@ -48,12 +48,15 @@ html {
     font-size: 18px;
     margin-top: 5px;
   }
-  ul {
+  ul.nav{
     display: grid;
     grid-template-columns: auto auto auto auto;
     border-radius: 5px;
     padding-right: 20px;
+    position: fixed;
+    z-index: 1;
   }
+  
   
   nav a {
     text-decoration: none;
@@ -92,10 +95,16 @@ html {
     padding-bottom: 0;
   }
   #showcase .content-wrap {
-    margin-top: 220px;
+    margin-top: 200px;
+    margin-left: 20rem;
     height: 35vh;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+ 
   }
+  
   
   /* Bio*/
   #bio {
@@ -359,12 +368,20 @@ html {
     .bio p {
       font-size: 16px;
     }
+  
   }
   @media (max-width: 750px) {
     span {
       display: flex;
+      position: fixed;
+
+  
     }
-    ul {
+    .bar{
+      margin-right: 18rem;
+      padding-top: 10px;
+    }
+    ul.nav {
       display: none;
     }
   
@@ -382,6 +399,17 @@ html {
     #showcase p {
       font-size: 15px;
     }
+    #showcase .content-wrap {
+      margin-top: 200px;
+      margin-right: 20rem;
+      height: 35vh;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+     align-items: center;
+   
+    }
+    
     .iconx {
       width: 15px;
     }
@@ -406,12 +434,13 @@ html {
       
     }
     .column{
-    text-align: center;
+      margin-left: 65px;
     }
+   
     .row {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+     
     }
     #work-done img {
       display: flex;
