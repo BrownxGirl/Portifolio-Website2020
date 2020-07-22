@@ -216,6 +216,7 @@ html {
   }
   
   input[type="text"],
+  input[type="email"],
   textarea {
     width: 50%; 
     padding: 12px;
