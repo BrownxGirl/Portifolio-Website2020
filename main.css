@@ -7,9 +7,9 @@ html {
     background: rgb(17, 17, 17);
     color: #fff;
     font-size: 1.1em;
-    line-height: 1.5;
     text-align: center;
     overflow-x: hidden;
+    overflow-y: hidden;
   }
   
   
@@ -20,6 +20,11 @@ html {
     margin: 0;
     padding: 1em 0;
   }
+  h1{
+    letter-spacing: 2px;
+  font-family:'Lora',Arial, Helvetica, sans-serif ;
+
+  }
   
   p {
     margin: 0;
@@ -29,12 +34,12 @@ html {
   .btn {
     display: inline-block;
     background: transparent;
-    color: #fff;
+    color: rgba(250, 244, 244, 0.726);
     text-decoration: none;
     padding: 10px 10px;
-    border: 1px solid #666;
+    border: 1px solid rgb(204, 199, 199);
     margin: 0.2em 0;
-    border-radius: 10px;
+  
   }
   
   .btn:hover {
@@ -44,28 +49,64 @@ html {
   /* Nav bar */
   li {
     list-style: none;
-    padding: 5px;
     font-size: 18px;
-    margin-top: 5px;
-  }
-  ul.nav{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    border-radius: 5px;
-    padding-right: 20px;
-    position: fixed;
-    z-index: 1;
+    padding: 20px 10px;
+   
+   
   }
   
-  
-  nav a {
+
+  header{
+    background-color:#fff;
+  color:#000;
+  position: fixed;
+  top: 0;
+  width:100%;  
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
+#logo{
+padding-left:  30px;
+color: rgb(194, 181, 181);
+}
+header a{
+    color: #000000;;
     text-decoration: none;
-    color: rgb(97, 94, 94);
-  }
-  nav a:hover {
-    text-decoration: underline;
-  }
+    font-size: 16px;
+    font-weight: bold;
+   
+
+}
+
+header ul{
+    list-style: none;
+    margin: 0;
+    z-index:1;
+    display: flex;
+    padding-right: 20px;
+   
+}
+header li{
+  padding:25px 20px;
+    
+}
+
+
+
+header nav{
+    float:right;
+    color: #000;
   
+
+}
+
+header a:hover{
+    color:#000;
+
+}
+
+
   /* Showcase */
   
   #showcase {
@@ -75,61 +116,98 @@ html {
     display: flex;
   }
   
-  #showcase .african-image {
-    position: absolute;
-    background: #333 url("img/african.jpg");
+  #showcase {
+     color: #f1f1f1;
+    background: #333 url("img/africanxxx.jpg") no-repeat;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 100vh;
-    z-index: -1;
-    opacity: 0.8;
+    letter-spacing: 2px;
+    font-family:'Lora',Arial, Helvetica, sans-serif ;
+   
+  
+  }
+  .over-lay{
+    background-color: rgba(0, 0, 0, 0.712);
+    height: 100%;
+    width: 100%;
   }
   
-  .btn{
-    color:rgb(97, 94, 94);
-  }
+  
   #showcase h1 {
     padding-top: 50px;
-    padding-bottom: 0;
+    padding-bottom: 5px;
+
   }
   #showcase .content-wrap {
-    margin-top: 200px;
-    margin-left: 20rem;
-    height: 35vh;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-   align-items: center;
+    width: 80%;
+    margin-top:270px; /* will move the content to the middle*/
+    overflow: hidden; 
+    line-height: 20px;
+
+  
  
   }
   
+  #showcase h1{
+    font-family: 'Tangerine', serif;
+    color: rgba(255, 255, 255, 0.829);
+    font-weight: 350;
+      text-align: center;
+      font-size: 33px;
+      margin-left: 19%;
+      width:85%;
+  }
+  #showcase p{
+    margin-left: 20%;
+    text-align: center;
+     font-size: medium;
+     color: rgba(255, 255, 255, 0.562);
+  }
+  #showcase .title{
+    font-size: 17px;
+    line-height: 10px;
+    padding-top: 5px;
+    color: rgba(255, 255, 255, 0.829);
+  }
+  .btn{
+    margin-left: 20%;
+  }
   
   /* Bio*/
+  .about-img{
+    background-image: url(img/rail.jpg);
+    height: 220px;
+  }
+  .about-img h1{
+    padding-top: 130px;
+    color: #fff;
+    font-size: 1.1em;
+  }
+  .about{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .about p{
+    width: 30%;
+    padding: 80px ;
+  }
   #bio {
-    background-color: rgb(218, 216, 216);
+    background-color: #fff;
     color: rgb(44, 42, 42);
-    height: auto;
+    height: 100vh;
   
   
   
   }
   .nomanna{
-    width: 180px;
-    border-radius: 100%;
+    width: 250px;
+    height: auto;
+    padding: 70px;
   }
-  .bio {
-   
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 40px;
-  }
-  
-  .bio h1 {
-    width: 70%;
-    margin-left: 15%;
-  }
+ 
   .bio p {
     width: 50%;
     margin-left: 25%;
@@ -137,22 +215,31 @@ html {
   }
   
   /* Work done */
-  
+  .work-img{
+    background-image: url(img/rail.jpg);
+    height: 220px;
+  }
+  .work-img h1{
+    padding-top: 130px;
+    color: #fff;
+    font-size: 1.2em;
+  }
   #work-done {
     color: black;
-    height: 60vh;
-    background-color: rgb(220, 220, 220);
+    height: 100vh;
+    background-color:#fff;
+    width: auto;
   }
   
   #work-done {
-    padding: 30px;
+    padding: 120px;
   }
   .row {
     display: grid;
     grid-template-columns: auto auto auto;
-  
-    border-radius: 5px;
     padding-right: 0px;
+    margin-right: 150px;
+   
   
   }
   
@@ -162,9 +249,9 @@ html {
   }
   
   #work-done img {
-    width: 150%;
-    height: 35vh;
-    border-radius: 10px;
+    width: 130%;
+    height: 30vh;
+    padding: 0cm;
   }
   
   .container {
@@ -179,11 +266,11 @@ html {
     left: 0;
     right: 0;
     height: 100%;
-    width: 150%;
+    width: 130%;
     opacity: 0;
     transition: 0.5s ease;
     background-color: rgba(0, 0, 0, 0.876);
-    border-radius: 20px;
+  
   }
   
   .container:hover .overlay {
@@ -204,15 +291,32 @@ html {
   
   /*Skills*/
   #skills {
-    background-color: rgb(218, 216, 216);
+    background-color: #fff;
     color: black;
     height: 50vh;
   }
-  
+  #skills{
+    height: 100vh;
+  }
+  .skill{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    padding-top: 50px;
+
+  }
+  img{
+    width: 120px;
+    padding-top: 50px;
+    padding-right: 30px;
+  }
 
 /* contact me */
 .form{
-    background-color: transparent;
+    background-color: rgba(245, 245, 245, 0.747);
+    color: white;
   }
   
   input[type="text"],
@@ -220,8 +324,7 @@ html {
   textarea {
     width: 50%; 
     padding: 12px;
-    border: 1px solid rgb(168, 166, 166); 
-    border-radius: 4px; 
+    border: 0px solid rgba(245, 245, 245, 0.747); 
     box-sizing: border-box; 
     margin-top: 6px; 
     margin-bottom: 16px; 
@@ -229,35 +332,50 @@ html {
   }
   
   input[type="submit"] {
-    background-color: white;
-    color: rgb(71, 68, 68);
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
+    background-color: transparent;
+    color:#000000;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px 20px;
     cursor: pointer;
+    font-weight: bold;
+    font-size: medium;
   }
   
   
   input[type="submit"]:hover {
-    background-color: rgb(71, 68, 68);
+    background-color: rgb(8, 8, 8);
     color: white;
   }
   
   .contact-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    border-radius: 5px;
-   
-    background-color: rgba(220, 220, 220, 0.102);
+   width: 35%;
+    background-color: rgba(243, 241, 241, 0.575);
     padding: 20px;
-  
+  margin: auto;
     justify-content: center;
+ 
+  }
+  #contact h1{
+    padding: 0;
+  }
+  #contact p{
+    padding-bottom: 30px;
+   font-size: medium;
   }
   
-  #contact {
+
   
-    background-color: rgb(220, 220, 220);
-    color: #000;
+  #contact {
+  background-image: url("img/apple.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+   color: #000;
+  height:100vh;
+  letter-spacing: 2px;
+  font-family:'Lora',Arial, Helvetica, sans-serif ;
+
+  
   }
   
   .icon {
@@ -265,34 +383,26 @@ html {
     grid-template-columns: auto auto auto auto;
     border-radius: 5px;
     padding: 20px;
+
   
     justify-content: center;
   }
   .iconx {
-    padding: 18px;
-    color: rgb(97, 93, 93);
+    padding: 25px 20px;
+ 
+    color: #fff;
   }
   .iconx:hover {
-    color: #000;
+    color: rgb(97, 93, 93);
   }
   /* Footer */
   
   #main-footer {
     padding: 10px;
-    background: rgba(245, 235, 235, 0.596);
+    background: #fff;
     color: rgb(97, 93, 93);
     text-align: center;
     font-size: smaller;
-  
-  }
-  footer ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .footer{
-    font-size: 15px;
-  
   
   }
   
@@ -303,23 +413,26 @@ html {
     display: none;
   }
   .sidenav {
-    height: 100%; 
+    height: 90%; 
     width: 0; 
     position: fixed; 
     z-index: 1; 
     left: 0;
-    background-color: rgba(156, 148, 148, 0.938); 
+    background-color: rgba(0, 0, 0, 0.801); 
     overflow-x: hidden;
     padding-top: 60px; 
     transition: 0.5s; 
+     letter-spacing: 2px;
+  font-family:'Lora',Arial, Helvetica, sans-serif ;
+
   }
   
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-  
-    color: #3d3434;
+    
+    color: #fff;
     display: block;
     transition: 0.3s;
   }
@@ -349,65 +462,82 @@ html {
   
   /* Media Queries */
   
-  @media (max-width: 370px) {
-    .bio p {
-      font-size: 15px;
-    }
-   .column{
-     margin-left: 35px;
-   }
-   
-  }
-  @media (max-width: 350px) {
-    #showcase h1 {
-      margin-bottom: 60px;
-      font-size: 27px;
-    }
-    #showcase p {
-      display: none;
-    }
-    .bio p {
-      font-size: 16px;
-    }
   
-  }
+  @media (max-width: 360px) {
+  
+    
+   .btn{
+     display: none;
+   }
+    #bio p {
+      font-size: 15px;
+      
+    }
+    #bio{
+      height: auto;
+    }
+    header{
+      width: auto;
+    }
+
+    .nomanna{
+      padding: 40px;
+    }
+    
+    #work-done {
+      padding: 0px;
+    }
+   
+  
+}
   @media (max-width: 750px) {
     span {
       display: flex;
       position: fixed;
+      padding-top: 18px;
+      padding-left: 8px;
 
   
     }
-    .bar{
+    #logo{
+      padding-left: 16rem;
+      font-size: medium;
+    }
+    /* .bar{
       margin-right: 18rem;
       padding-top: 10px;
-    }
+    } */
     ul.nav {
       display: none;
     }
-  
+  body{
+    overflow-y: scroll;
+  }
     #showcase {
       min-height: 100vh;
       color: rgb(97, 94, 94);
       text-align: center;
       display: flex;
       justify-content: center;
+      width: 100%;
     }
     #showcase h1 {
-      margin-top: -130px;
+     
       font-size: 25px;
     }
     #showcase p {
       font-size: 15px;
     }
     #showcase .content-wrap {
-      margin-top: 200px;
-      margin-right: 20rem;
+     padding-top:200px;
+      margin-top:3rem;
+      margin-left: 2rem;
       height: 35vh;
-      width: 50%;
+      width: 70%;
       display: flex;
       flex-direction: column;
      align-items: center;
+     line-height: 23px;
    
     }
     
@@ -415,16 +545,30 @@ html {
       width: 15px;
     }
     .nomanna{
-  margin-left: 45px;
+  margin-left: 25px;
+  width: 200px;
+  height: auto;
+  padding-bottom: 0;
     }
-    .bio {
+    #bio {
     
-      font-size: 18px;
+      font-size: 12px;
     }
-  
-    .bio p {
+  .about{
+    flex-direction: column;
+  }
+  .about-img{
+    height: 80px;
+  }
+  .about-img h1{
+    padding-top: 35px;
+    font-size: 1.2em;
+  }
+    #bio p {
       width: 80%;
-      margin-left: 20%;
+      padding: 20px;
+      margin-left: 20px;
+   
     }
     .bio h1 {
       width: 90%;
@@ -432,6 +576,7 @@ html {
   
     #work-done {
       height: auto;
+      
       
     }
     .column{
@@ -442,6 +587,13 @@ html {
       display: flex;
       flex-direction: column;
      
+    }
+    .work-img{
+      height: 80px;
+    }
+    .work-img h1{
+      padding-top: 35px;
+      font-size: 0.9em;
     }
     #work-done img {
       display: flex;
@@ -459,6 +611,15 @@ html {
     /*Skills*/
     #skills {
       height: auto;
+      
+    }
+    .skill{
+      padding-top: 0;
+      padding-bottom: 50px;
+    }
+    /*contact*/
+    .contact-container{
+      width: 80%;
     }
     .footer{
       font-size: 11px;

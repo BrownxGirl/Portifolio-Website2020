@@ -4,62 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/0818d94b69.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:200,100,400" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lora:200,100,400" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="main.css">
     <title>Nomanna's Portifolio</title>
 </head>
 <body>
   
-    <header id="showcase">
+    <header>
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        li><a class="li-link" href="#showcase">Home</a></li>
         <a class="li-link" href="#bio">About</a>
         <a class="li-link" href="#work-done">Work</a>
         <a class="li-link" href="#skills">Skills</a>
         <a class="li-link" href="#contact">Contact</a>
       </div>
       <span onclick="openNav()"><i class="fa fa-bars fa-lg bar" aria-hidden="true"></i></span>      
-        <nav>
+     <div id="logo"> <h3>NOMANNA</h3> </div> 
+      <nav>
             <ul class="nav">
+
+              <li><a class="li-link" href="#showcase">Home</a></li>
                 <li><a class="li-link" href="#bio">About</a></li>
-                 <li><a class="li-link" href="#work-done">Work</a></li>
+                 <li><a class="li-link" href="#work">Work</a></li>
                 <li><a class="li-link" href="#skills">Skills</a></li>
                 <li><a class="li-link" href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="african-image"></div>
-        <div class="content-wrap">
-          
-          <h1>Hey, I'm Nomanna</h1>
-          <p>A 21st Century African female Junior Web developer Who Turns Ideas Into Beautiful Functional Masterpieces.</p>
-          <a href="#bio" class="btn">Read More</a>
-          <div class="icon">    
-            <a target="_blank"href = "https://twitter.com/brown_girl26"><i class="fab fa-twitter fa-2x iconx sml"></i></a>
-            <a target="_blank" href="https://www.facebook.com/ayala.gamede"><i class="fab fa-facebook fa-2x iconx sml"></i></a>
-             <a target="_blank" href="https://www.linkedin.com/in/nomanna-mavata-b294a7192/"><i class="fab fa-linkedin fa-2x iconx sml"></i></a>
-            <a target="_blank"href="https://github.com/BrownxGirl"> <i class="fab fa-github fa-2x iconx sml"></i></a> 
+    </header>
+        <div id="showcase"> 
+          <div class="over-lay">
+            <div class="content-wrap">
+    
+              <h1>Nomanna Oprah Mavata</h1>
+              <p>Turning Ideas Into Digital Pieces.</p>
+              <p class="title">Web Developer</p>
+              <a href="#bio" class="btn">Read More</a>
+            </div>
           </div>
-        </div>
-      </header>
+          </div>
+          
+       
       
      
       
-          <!-- Bio -->
-  <section id="bio" class="bio">
-   <div>
-    <h1>About Me</h1>
-    <img class="nomanna" src="img/nomanna.jpg">
-    <p>I am an Aspiring Software developer who has an increasing love for pizza and cheese. Aside from wanting to build something with an enjoyable user experience I enjoy reading a good book, writing or planning my next pizza day </p>
-    <p>I enjoy understanding and exploring different perspectives of life, I have experience in rural community development and human centerd design. I am currently upskilling my tech skills under Umuzi Academy.</p>
-   </div>  
-     
-  </section>
+
+<section id="bio">
+  <div class="about-img"><div class="over-lay"><h1>About Me</h1></div></div>
+  <div class="about">
+    <img class="nomanna" src="img/nom.jpg">
+    <p>I am an Web developer who has an increasing love for pizza and cheese. Aside from wanting to build something with an enjoyable user experience I enjoy reading a good book, writing or planning my next pizza day.
+      <br> <br>I have experience in rural community development and human centerd design. I am currently upskilling my tech skills at Umuzi Academy.</p>
+  </div>
+
+</section>
+
       
         <!--Work done -->
-        
+        <div id="work" class="work-img"><div class="over-lay"><h1>Some Of My Work</h1></div></div>
         <section id="work-done" >
-            <h1>Some of my work</h1>
-            <section>
+        <section>
               <div class="row">
                 <div class="column  container">
                   <img src="img/GJCBC.png" alt="Image 5" class= "image">
@@ -79,45 +84,62 @@
       
         <!-- skills -->
         <section id="skills">
-            <h2>My Skills</h2>
+          <div id="work" class="work-img"><div class="over-lay"><h1>My Skills</h1></div></div>
+          <section class="skill" >
+         <img class="logo" src="img/html.png" alt="html logo">
+         <img class="logo" src="img/css.png" alt="css logo">
+         <img class="logo" src="img/js.png" alt="js logo">
+         <img class="logo" src="img/node.png" alt="node logo">
+         <img class="logo" src="img/git.png" alt="git logo">
+          </section>
          
-              <p>HTML5</p>
-              <p>CSS3</p>
-              <p>Javascript</p>
                 
         </section>
       
         <!-- Contact Me-->
        
         <section id="contact">
-          <div class="box">
-            <h2>Contact Me</h2>
-            <div class="contact-container">
-              <form method="POST" action="contact.php">
-            
-                <input class="form" type="text" id="fname" name="firstname" placeholder="Your name.." required>
-                
-                <input  class="form" type="email" id="email" name="lastname" placeholder="Your email address" required>
-                <textarea  class="form" id="subject" name="subject" placeholder="Message..." style="height:200px"></textarea>
-              </br>
-                <input type="submit" value="Send Message">
-            
-              </form>
+          <div class="over-lay">
+            <div class="box">
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <div class="contact-container">
+                <h1>Contact Me</h1>
+                <p>Drop me a message</p>
+                <form method="POST" action="https://formspree.io/mrgywdbp">
+              
+                  <input class="form" type="text" id="fname" name="firstname" placeholder=" Full Name..." required>
+                  
+                  <input  class="form" type="email" id="email" name="lastname" placeholder="Email Address..." required>
+                  <textarea  class="form" id="subject" name="subject" placeholder="Message..." style="height:200px"></textarea>
+                </br>
+                  <input type="submit" value="Send Message">
+              
+                </form>
+              </div>
+              <br>
+        
+              <a target="_blank"href = "https://twitter.com/brown_girl26"><i class="fab fa-twitter fa-2x iconx sml"></i></a>
+              <a target="_blank" href="https://www.linkedin.com/in/nomanna-mavata-b294a7192/"><i class="fab fa-linkedin fa-2x iconx sml"></i></a>
+             <a target="_blank"href="https://github.com/BrownxGirl"> <i class="fab fa-github fa-2x iconx sml"></i></a> 
+             <footer id="main-footer">
+              <p>Portifolio Site 2020 &copy; created by Nomanna</p>
+           
+            </footer>
             </div>
-          
+
           </div>
+          
         </section>
       
       
       
       <!-- Footer -->
-      <footer id="main-footer">
-        <div>Portifolio Site 2020 &copy; created by Nomanna</a></div> <ul>
-            <li class="footer"><i class="fa fa-map-marker"> Johannesburg | South Africa</i></li>
-            <li class="footer"><i class="fa fa-envelope fa"> nomannaoprah@gmail.com</i></li>
-            </ul>
-     
-      </footer>
+      
       <script>
        
 function openNav() {
