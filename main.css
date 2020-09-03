@@ -316,7 +316,7 @@ header a:hover{
 /* contact me */
 .form{
     background-color: rgba(245, 245, 245, 0.747);
-    color: white;
+    color: #000;
   }
   
   input[type="text"],
