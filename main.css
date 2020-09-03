@@ -465,7 +465,7 @@ header a:hover{
   
   @media (max-width: 360px) {
   
-    
+
    .btn{
      display: none;
    }
@@ -477,7 +477,7 @@ header a:hover{
       height: auto;
     }
     header{
-      width: auto;
+      width: 100%;
     }
 
     .nomanna{
@@ -601,12 +601,17 @@ header a:hover{
       height: 150px;
       padding: 10px;
     }
+    #work-done {
+      padding: 0px;
+    }
     .text {
       font-size: 15px;
     }
     .overlay {
       width: 150%;
     }
+
+
   
     /*Skills*/
     #skills {
