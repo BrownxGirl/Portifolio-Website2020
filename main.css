@@ -133,6 +133,12 @@ header a:hover{
     height: 100%;
     width: 100%;
   }
+  .over-layx{
+    background-color: rgba(0, 0, 0, 0.226);
+    height: 100%;
+    width: 100%;
+  }
+  
   
   
   #showcase h1 {
