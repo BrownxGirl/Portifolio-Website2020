@@ -504,6 +504,10 @@ header a:hover{
   
 }
   @media (max-width: 750px) {
+    a{
+      text-decoration: none;
+      color: white;
+  }
     span {
       display: flex;
       position: fixed;
