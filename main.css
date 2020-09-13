@@ -4,12 +4,12 @@ html {
   body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: rgb(17, 17, 17);
+    background: #ffffff;
     color: #fff;
     font-size: 1.1em;
     text-align: center;
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: scroll;
   }
   
   
@@ -183,36 +183,46 @@ header a:hover{
   }
   
   /* Bio*/
-  .about-img{
-    background-image: url(img/rail.jpg);
-    height: 220px;
-  }
+
   .about-img h1{
-    padding-top: 130px;
-    color: #fff;
-    font-size: 1.1em;
+    padding-top: 50px;
+    color: rgb(3, 3, 3);
+    font-size: 1.5em;
+   font-weight: 300;
   }
+
+#bio h4
+{
+  font-weight: 100;
+  color: rgb(99, 92, 92);
+  margin-top: 0;
+}
   .about{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
+    
   }
   .about p{
-    width: 30%;
-    padding: 80px ;
+    width: 40%;
+    padding: 0px ;
+    margin: auto;
   }
   #bio {
-    background-color: #fff;
+    background-color: rgb(250, 250, 250);
     color: rgb(44, 42, 42);
     height: 100vh;
-  
-  
+
   
   }
   .nomanna{
     width: 250px;
-    height: auto;
-    padding: 70px;
+    height: 280px;
+    padding: 40px;
+    margin: auto;
+    border-radius: 100%;
+    
   }
  
   .bio p {
@@ -222,24 +232,26 @@ header a:hover{
   }
   
   /* Work done */
-  .work-img{
-    background-image: url(img/rail.jpg);
-    height: 220px;
-  }
-  .work-img h1{
-    padding-top: 130px;
+  
+  #work-done h1{
+    padding-bottom: 80px;
     color: #fff;
-    font-size: 1.2em;
+    font-size: 1.5em;
+   font-weight: 300;
   }
   #work-done {
     color: black;
-    height: 100vh;
+    height: 80vh;
     background-color:#fff;
-    width: auto;
+    width: 100%;
   }
   
   #work-done {
-    padding: 120px;
+    padding: 0px;
+    background-image: url('img/workdone.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:100% 150% ;
   }
   .row {
     display: grid;
@@ -256,16 +268,21 @@ header a:hover{
   }
   
   #work-done img {
-    width: 130%;
+    width: 131%;
     height: 30vh;
     padding: 0cm;
   }
   
   .container {
     position: relative;
-    width: 50%;
+    width: 75%;
+
   }
-  
+  .overlayxx{
+    background-color: rgba(0, 0, 0, 0.719);
+    height: 80vh;
+    width: 100%;
+  }
   .overlay {
     position: absolute;
     top: 0;
@@ -297,13 +314,20 @@ header a:hover{
   }
   
   /*Skills*/
+
+  #skills h1{
+    color: #000000;
+    margin-top: 0rem;
+    font-size: 1.5em;
+   font-weight: 300;
+  }
   #skills {
-    background-color: #fff;
-    color: black;
-    height: 50vh;
+    background-color: #ffffff;
+    
+  
   }
   #skills{
-    height: 100vh;
+    height: 80vh;
   }
   .skill{
     display: flex;
@@ -311,7 +335,7 @@ header a:hover{
     justify-content: center;
     width: 50%;
     margin: auto;
-    padding-top: 50px;
+    padding-top: 0px;
 
   }
   img{
@@ -379,7 +403,7 @@ header a:hover{
   background-size: cover;
   width: 100%;
    color: #000;
-  height:90vh;
+  height:100vh;
   letter-spacing: 2px;
   font-family:'Lora',Arial, Helvetica, sans-serif ;
   }
@@ -389,8 +413,6 @@ header a:hover{
     grid-template-columns: auto auto auto auto;
     border-radius: 5px;
     padding: 20px;
-
-  
     justify-content: center;
   }
   .iconx {
@@ -404,7 +426,8 @@ header a:hover{
   /* Footer */
   
   #main-footer {
-    padding: 10px;
+
+    padding-bottom: 10px;
     background: #fff;
     color: rgb(97, 93, 93);
     text-align: center;
@@ -543,6 +566,7 @@ header a:hover{
      margin: 0px;
      padding-bottom: 10px;
       font-size: 25px;
+      line-height: 25px;
     }
     #showcase p {
     display: none;
@@ -582,14 +606,15 @@ header a:hover{
       padding: 35px;
     }
     .nomanna{
-  margin-left: 25px;
-  width: 200px;
-  height: auto;
-  padding-bottom: 0;
+ margin: auto;
+ border-radius: 100%; 
+ height: 200px;
+ width: 200px;
+  padding: 10px;
     }
     #bio {
     
-      font-size: 12px;
+      font-size: 14px;
     }
   .about{
     flex-direction: column;
@@ -599,7 +624,7 @@ header a:hover{
   }
   .about-img h1{
     padding-top: 35px;
-    font-size: 1.2em;
+    font-size: 22px;
   }
     #bio p {
       width: 80%;
@@ -608,13 +633,17 @@ header a:hover{
    
     }
     .bio h1 {
+    
       width: 90%;
     }
   
     #work-done {
       height: auto;
-      
-      
+    }
+
+    #work-done h1{
+      padding: 20px;
+      font-size: 22px;
     }
     .column{
       margin-left: 65px;
@@ -640,12 +669,17 @@ header a:hover{
     }
     #work-done {
       padding: 0px;
+      height: 110vh;
+    }
+
+    .overlayxx{
+      height: 110vh;
     }
     .text {
       font-size: 15px;
     }
     .overlay {
-      width: 200%;
+      width: 150%;
 
     }
 
@@ -669,9 +703,13 @@ header a:hover{
     
     }
    #contact{
-     height: 95vh;
+     height: 115vh;
    }
    #contact .iconx{
      display: none;
    }
+footer{
+  margin: 0;
+}
+
   }
