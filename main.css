@@ -152,10 +152,11 @@ header a:hover{
     overflow: hidden; 
     line-height: 20px;
 
-  
  
   }
-  
+  #showcase .iconx{
+    display: none;
+  }
   #showcase h1{
     font-family: 'Tangerine', serif;
     color: rgba(255, 255, 255, 0.829);
@@ -328,7 +329,7 @@ header a:hover{
   input[type="text"],
   input[type="email"],
   textarea {
-    width: 50%; 
+    width: 80%; 
     padding: 12px;
     border: 0px solid rgba(245, 245, 245, 0.747); 
     box-sizing: border-box; 
@@ -359,6 +360,7 @@ header a:hover{
     padding: 20px;
   margin: auto;
     justify-content: center;
+    
  
   }
   #contact h1{
@@ -377,11 +379,9 @@ header a:hover{
   background-size: cover;
   width: 100%;
    color: #000;
-  height:100vh;
+  height:90vh;
   letter-spacing: 2px;
   font-family:'Lora',Arial, Helvetica, sans-serif ;
-
-  
   }
   
   .icon {
@@ -409,6 +409,7 @@ header a:hover{
     color: rgb(97, 93, 93);
     text-align: center;
     font-size: smaller;
+   
   
   }
   
@@ -469,12 +470,15 @@ header a:hover{
   /* Media Queries */
   
   
-  @media (max-width: 360px) {
+  @media (max-width: 320px) {
   
 
-   .btn{
+   /* .btn{
      display: none;
-   }
+   } */
+
+
+
     #bio p {
       font-size: 15px;
       
@@ -493,6 +497,9 @@ header a:hover{
     #work-done {
       padding: 0px;
     }
+    /* #contact{
+    height: 510vh;
+    } */
    
   
 }
@@ -502,8 +509,6 @@ header a:hover{
       position: fixed;
       padding-top: 18px;
       padding-left: 8px;
-
-  
     }
     #logo{
       padding-left: 16rem;
@@ -535,10 +540,10 @@ header a:hover{
       font-size: 15px;
     }
     #showcase .content-wrap {
-     padding-top:200px;
-      margin-top:3rem;
+
+      margin-top:10rem;
       margin-left: 2rem;
-      height: 35vh;
+      height: 55vh;
       width: 70%;
       display: flex;
       flex-direction: column;
@@ -546,7 +551,13 @@ header a:hover{
      line-height: 23px;
    
     }
-    
+    .iconxx{
+      display: flex;
+    }
+    #showcase .iconx{
+      display: flex;
+    }
+
     .iconx {
       width: 15px;
     }
@@ -631,13 +642,21 @@ header a:hover{
     }
     /*contact*/
     .contact-container{
-      width: 80%;
+      width: 80%
     }
     .footer{
       font-size: 11px;
     
-    
     }
-   
+   #contact{
+     height: 95vh;
+   }
+   #contact .iconx{
+     display: none;
+   }
   }
-  
+  @media (min-width: 1400px) {
+#main-footer{
+  /* margin-top: 5.5rem; */
+}
+  }
